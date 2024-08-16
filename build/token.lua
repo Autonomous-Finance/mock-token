@@ -1959,9 +1959,10 @@ Variant = "0.0.3"
 Denomination = Denomination or "12"
 Balances = Balances or { [ao.id] = utils.toBalanceValue(10000 * 10 ^ tonumber(Denomination)) }
 TotalSupply = TotalSupply or utils.toBalanceValue(10000 * 10 ^ tonumber(Denomination))
-Name = Name or 'Points Coin'
-Ticker = Ticker or 'PNTS'
+Name = Name or ao.env.Process.Tags.Name
+Ticker = Ticker or ao.env.Process.Tags.Ticker
 Logo = Logo or 'SBCCXwwecBlDqRLUjb8dYABExTJXLieawf7m2aBJ-KY'
+
 
 
 local function infoHandler(msg)
@@ -2091,14 +2092,6 @@ local function burnHandler(msg)
       Data = Colors.gray .. "Successfully burned " .. Colors.blue .. msg.Tags.Quantity .. Colors.reset,
    })
 end
-
-Denomination = Denomination or "12"
-Balances = Balances or { [ao.id] = utils.toBalanceValue(10000 * 10 ^ tonumber(Denomination)) }
-TotalSupply = TotalSupply or utils.toBalanceValue(10000 * 10 ^ tonumber(Denomination))
-Name = Name or ao.env.Process.Tags.Name
-Ticker = Ticker or ao.env.Process.Tags.Ticker
-Logo = Logo or 'SBCCXwwecBlDqRLUjb8dYABExTJXLieawf7m2aBJ-KY'
-
 
 Handlers.add('info', Handlers.utils.hasMatchingTag('Action', 'Info'), infoHandler)
 Handlers.add('balance', Handlers.utils.hasMatchingTag('Action', 'Balance'), balanceHandler)

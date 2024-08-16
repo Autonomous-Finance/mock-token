@@ -1,0 +1,36 @@
+- name: mockAO
+  file: build/token.lua
+  scheduler: _GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA
+  module: cNlipBptaF9JeFAf4wUmpi43EojNanIBos3EfNrEOWo
+  tags:
+    - name: Name
+      value: mockAO
+    - name: Ticker
+      value: mockAO
+- name: mockWrappedAR
+  file: build/token.lua
+  scheduler: _GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA
+  module: cNlipBptaF9JeFAf4wUmpi43EojNanIBos3EfNrEOWo
+  tags:
+    - name: Name
+      value: mockWrappedAR
+    - name: Ticker
+      value: mockWrappedAR
+- name: mockBark
+  file: build/token.lua
+  scheduler: _GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA
+  module: cNlipBptaF9JeFAf4wUmpi43EojNanIBos3EfNrEOWo
+  tags:
+    - name: Name
+      value: mockBRK
+    - name: Ticker
+      value: mockBRK
+- name: mockDexi
+  file: build/token.lua
+  scheduler: _GQ33BkPtZrqxA84vM8Zk-N2aO0toNNu_C-l-rawrBA
+  module: cNlipBptaF9JeFAf4wUmpi43EojNanIBos3EfNrEOWo
+  tags:
+    - name: Name
+      value: mockDexi
+    - name: Ticker
+      value: mockDexi

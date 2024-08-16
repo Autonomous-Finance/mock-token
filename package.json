@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "aoform": "github:Autonomous-Finance/aoform"
+  "dependencies": {
+    "aoform": "^1.0.2"
   }
 }
